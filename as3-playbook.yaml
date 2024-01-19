@@ -23,4 +23,8 @@
       body_format: json
       validate_certs: no
     register: as3_output
+  
+  - name: DEBUG output
+    debug:
+      msg: " OUTPUT {{ as3_output }}"
 ...  
